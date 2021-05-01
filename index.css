@@ -74,8 +74,8 @@ header .column ul {
     margin: 16px 0 0;
 }
 
-header .column ul  li{
-    margin: 0 0 10px;
+header .column ul li{
+    padding: 0 0 10px;
 }
 
 header .column ul li a {
@@ -119,13 +119,17 @@ footer nav .social-links li a img {
 
 /* PÁGINA INICIAL */
 main .column {
-    padding: 20px;
+    padding: 0 20px 20px;
 }
 
-main .column section{
+main .column-left {
+    padding-bottom: 0;
+}
+
+main .column section {
     border-bottom: 1px solid #d4e9ff;
-    margin: 20px 0;
-    padding: 10px 0;
+    margin: 0 0 20px;
+    padding: 15px 0;
     min-height: 145px;
     color: var(--colorText2);
 }
@@ -147,6 +151,10 @@ main .column section ul li {
 
 main .column section ol li {
     margin: 10px 0 0;
+}
+
+main .column section ol > li:nth-of-type(1) {
+    margin: 5px 0 0;
 }
 
 main .column section ol ul li {
@@ -352,7 +360,7 @@ label span {
         display: initial;
     }
 
-    footer nav .social-links li a img:hover {
+    footer nav .social-links li a:hover img {
         width: 45px;
     }
 
